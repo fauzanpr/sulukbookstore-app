@@ -80,7 +80,7 @@
                                 <ul class="sub-menu">
                                     <li><a href="" data-bs-toggle="modal"
                                             data-bs-target="#loginpelanggan">Pelanggan</a></li>
-                                    <li><a href="" data-bs-toggle="modal" data-bs-target="#loginadmin">Admin</a>
+                                    <li><a href="" data-bs-toggle="modal" data-bs-target="#loginadmin" data-id="admin-login">Admin</a>
                                     </li>
                                 </ul>
                             </li>

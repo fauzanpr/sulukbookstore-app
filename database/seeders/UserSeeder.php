@@ -18,7 +18,7 @@ class UserSeeder extends Seeder
         $datas = [
             [
                 'name' => 'Fauzan Pradana',
-                'email' => 'fauzanpr@gmail.com',
+                'email' => 'fauzanpr.06@gmail.com',
                 'telp' => '089783728378',
                 'province' => 'Jawa Timur',
                 'city' => 'blitar',
