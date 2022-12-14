@@ -73,4 +73,8 @@ Route::post('/admin/login', [LoginController::class, 'admin_authenticate'])->mid
 // LOGOUT ROUTE
 Route::post('/logout', [LogoutController::class, 'logout'])->middleware('auth');
 
+Route::get('fresh', function (){
+    Artisan::call('migrate:fresh --seed');
+});
+
 
