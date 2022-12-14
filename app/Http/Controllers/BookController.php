@@ -61,11 +61,21 @@ class BookController extends Controller
             ]);
             $storageBucketName = config('googlecloud.storage_bucket');
             $bucket = $storage->bucket($storageBucketName);
-            $fileSource = fopen('\storage\app\public\book_cover' . $image, 'r');
+
+            $filenameWithExt = $request->file('cover_photo')->getClientOriginalName();
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            $extension = $request->file('cover_photo')->getClientOriginalExtension();
+            $filenameSimpan = $filename . '_' . time() . '.' . $extension;
+            $path = $request->file('cover_photo')->storeAs('public/images/cover', $filenameSimpan);
+            $savepath = 'img/profile/anggota/' . $filenameSimpan;
+
+
+            // save on bucket
+            $fileSource = fopen(storage_path('app/public/' . $savepath), 'r');
 
             $bucket->upload($fileSource, [
                 'predefinedAcl' => 'publicRead',
-                'name' => $image
+                'name' => $savepath
             ]);
         }
 
