@@ -3,6 +3,7 @@
 use App\Models\Book;
 use App\Models\BookUser;
 use Illuminate\Auth\Events\Logout;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\ChartController;
@@ -81,4 +82,8 @@ Route::post('/logout', [LogoutController::class, 'logout'])->middleware('auth');
 Route::get('/fresh', function () {
     Artisan::call('migrate:fresh');
     Artisan::call('db:seed');
+});
+
+Route::get('/config-clear', function () {
+    Artisan::call('config:clear');
 });
