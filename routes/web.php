@@ -79,10 +79,6 @@ Route::post('/logout', [LogoutController::class, 'logout'])->middleware('auth');
 // });
 
 Route::get('/fresh', function () {
-    Artisan::call('migrate:fresh', [
-       '--force' => true
-    ]);
-    Artisan::call('db:seed', [
-        '--force' => true
-     ]);
+    Artisan::call('migrate:fresh');
+    Artisan::call('db:seed');
 });
