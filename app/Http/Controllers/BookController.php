@@ -67,7 +67,7 @@ class BookController extends Controller
             $extension = $request->file('cover_photo')->getClientOriginalExtension();
             $filenameSimpan = $filename . '_' . time() . '.' . $extension;
             $path = $request->file('cover_photo')->storeAs('public/images/cover', $filenameSimpan);
-            $savepath = 'img/profile/anggota/' . $filenameSimpan;
+            $savepath = 'public/images/cover/' . $filenameSimpan;
 
 
             // save on bucket
