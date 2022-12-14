@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\Category;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
+use Google\Cloud\Storage\StorageClient;
 
 class BookController extends Controller
 {
@@ -54,6 +55,18 @@ class BookController extends Controller
     {
         if ($request->file('cover_photo')) {
             $image = $request->file('cover_photo')->store('book_cover', 'public');
+            $googleConfigFile = file_get_contents(config_path('googlecloud.json'));
+            $storage = new StorageClient([
+                'keyFile' => json_decode($googleConfigFile, true)
+            ]);
+            $storageBucketName = config('googlecloud.storage_bucket');
+            $bucket = $storage->bucket($storageBucketName);
+            $fileSource = fopen(public_path('storage/' . $image), 'r');
+
+            $bucket->upload($fileSource, [
+                'predefinedAcl' => 'publicRead',
+                'name' => $image
+            ]);
         }
 
         $title = $request->title;
@@ -151,6 +164,16 @@ class BookController extends Controller
 
         if ($buku->cover_photo && file_exists(storage_path('app/public/' . $buku->cover_photo))) {
             Storage::delete('public/' . $buku->cover_photo);
+            $image = $buku->cover_photo;
+            $googleConfigFile = file_get_contents(config_path('googlecloud.json'));
+            $storage = new StorageClient([
+                'keyFile' => json_decode($googleConfigFile, true)
+            ]);
+            $storageBucketName = config('googlecloud.storage_bucket');
+            $bucket = $storage->bucket($storageBucketName);
+            $object = $bucket->object($image);
+
+            $object->delete();
         }
 
         $buku->delete();

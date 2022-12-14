@@ -68,8 +68,13 @@
                                     <div class="mb-3" style="max-width: 700px;">
                                         <div class="row g-0">
                                             <div class="col-md-4">
-                                                <img src="{{ asset('storage/' . $book->cover_photo) }}"
-                                                    class="img-fluid rounded-start" alt="foto sampul">
+                                                @if ($book->cover_photo === null)
+                                                    <img src="/images/product-01.jpg" class="img-responsive" alt="Foto Buku"
+                                                        style="max-width: 150px;">
+                                                @else
+                                                    <img src="{{ asset('storage/' . $book->cover_photo) }}"
+                                                        class="img-responsive" alt="Foto Buku" style="max-width: 150px;">
+                                                @endif
                                             </div>
                                             <div class="col-md-8">
                                                 <div class="card-body">

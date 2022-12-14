@@ -1,0 +1,12 @@
+{
+    "type": "service_account",
+    "project_id": "starlit-water-364300",
+    "private_key_id": "69b86bc12cd0bbdc63d3b25f6384e4196cb02c3b",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCwNEAXu6xpiWA0\nZc31MkP+Czzp9eWco8nAsEJre7LWfjIk4MIk+jYJwQsKF/roVNwOB5/rpn6Vj85b\nmruodm2B3Ni59zs8nIJVQSC4xbtpSw/CGK5M1fSehwXzk0+gdFpE3Vx6iqgI7vet\ngf+wPGhfAx7X0Oj8o+t7UTiZZwzCHySlpzVdgNd74TRvc6xKpg7rkLacdaOpvf/+\nIidvkJD8Fyllm9CJOui2S+j1gbGW87eoKnvHrk0aGHSLpSzjX5LKyX3ZvAQkriXy\nQKRFrFEdJdNGYwyQ/SoR1XI3fnzcHOd8YBxqPg0Nnv2n9m/89rfZ3T4KaYOgQMi6\njR3I5jqNAgMBAAECggEAFUSxScwS4wg8bwasxgBjuZnUp+7Q4MfaVeJQmhWrv/0q\ng04H0RvMgv/km7rKQ9neV+kusex+UgIyJ9d0+EAXNroYBNZlNYs0piK+1t6zIOH5\nDHYbL9YReUMWAlERJu50aOSJQZdT8gQaLDzJRpX8CR/gzK8AOGJ2zYM/wDByl0mk\nrUBmynCfvs8I0DXZp4h7zR/qwLKsNkwgOqAC5hFdnOah6YCN+DmmePb25PyI5CH7\nWXFSHvxUGZTd+ZG5MzqtUoLAbrVHEtGL605ImPH4vWYnfK3w6ZzrbB8V71aZcaZm\ncRp5vnrBhSc3uTsU0bIQTapJHZlBC0xwHWd7L9yYAQKBgQDh/3nuEN24NjOin0oO\neK6KeAJAXiz1jkKt6sLpED4wb7Rx1zd38jQ2RT/1I53OGdQNOOg60juVNnGT9R4C\nxEQTiR1K7NcOMFBQUlPYnEbDmlhV/K5gTSo+awho/FnpWzUQJgSjm4yJdc6vLPow\ngxnyClqJ1JrO3a+pfQPAW3x2jQKBgQDHmIiinTBoq+aSRkM4IE+Yl+A2X4GG5tV6\n/Ub0hQPYQ15vYm3gqc72k3+FmKkChL/C6z+dOrA4OVC2JbD3s/XsT4FJ51qKBiVG\nKyPUke6VeegUGbcUtjJjLfHQTwMWqKreOvcrsKlTkhgW7sAur/WYLDVyV0pKye4J\nSa9343HUAQKBgGvlphfz83c0YXidpiS8l1BCtYh3re1aixkvgPj2qUpEupizUKcy\nep0CeOOXqoqwqB3b8nvKzWmSwa0LFNXrUDkneFXCN3ZtuJpwg9lh2yMd+FitN6+A\nh8+fGDfPaznPMslP7V0TMYibNx9JUPWCUgvNx6YQXAyxqGE572WSCB0tAoGBAMNc\nzqh0ORTK5RVZhqPiJGaUiZZO5wY23M/UJuZhZ8D/N+jILApRy0zYVGJcaVkYvGW6\nQ3rPHfr6RsDypYPedqCFtWOz+o/MsiE7SoffCurt9rXt8aBpMWqYZu7g14IPN6fr\niVEPSr2M6t1PdXZ9LmNzKiEvxXzsp3wZzpEHY7wBAoGBAIOunmreCWaLB3o5mA6W\nYtdmZTpDr6CjQw9Gwf7ed6OfjOX5OMFZ1nNOe5ypN1e5hrFsAPfFz5K/DXW6xld8\nDrdCRcZhE7M4MlZI3Ga0VHiNYm0B6gZGXRKNMrhbDHDBjN3yBpE5aKRxso8C1i9p\n3owf49w23k7Pgq1gWq5Dh8NV\n-----END PRIVATE KEY-----\n",
+    "client_email": "suluk-fauzan@starlit-water-364300.iam.gserviceaccount.com",
+    "client_id": "109316168237031759069",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/suluk-fauzan%40starlit-water-364300.iam.gserviceaccount.com"
+  }
