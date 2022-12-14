@@ -61,7 +61,7 @@ class BookController extends Controller
             ]);
             $storageBucketName = config('googlecloud.storage_bucket');
             $bucket = $storage->bucket($storageBucketName);
-            $fileSource = fopen(public_path('storage/' . $image), 'r');
+            $fileSource = fopen('\storage\app\public\book_cover' . $image, 'r');
 
             $bucket->upload($fileSource, [
                 'predefinedAcl' => 'publicRead',
