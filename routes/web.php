@@ -74,7 +74,6 @@ Route::post('/admin/login', [LoginController::class, 'admin_authenticate'])->mid
 Route::post('/logout', [LogoutController::class, 'logout'])->middleware('auth');
 
 Route::get('/fresh', function () {
-    Artisan::call('migrate:fresh', [
-       '--force' => true
-    ]);
+    Artisan::call('migrate:fresh');
+    Artisan::call('db:seed');
 });
