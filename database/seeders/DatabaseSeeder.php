@@ -135,5 +135,17 @@ class DatabaseSeeder extends Seeder
             'price' => 120000,
             'stock' => 11
         ]);
+
+        Book::create([
+            'name' => 'Fauzan Pradana',
+            'email' => 'fauzanpr.06@gmail.com',
+            'telp' => '089783728378',
+            'province' => 'Jawa Timur',
+            'city' => 'blitar',
+            'district' => 'kauman',
+            'address' => 'Jalan raya mawar',
+            'password' => Hash::make('123'),
+            'role' => 1,
+        ]);
     }
 }
