@@ -136,7 +136,7 @@ class DatabaseSeeder extends Seeder
             'stock' => 11
         ]);
 
-        Book::create([
+        User::create([
             'name' => 'Fauzan Pradana',
             'email' => 'fauzanpr.06@gmail.com',
             'telp' => '089783728378',
