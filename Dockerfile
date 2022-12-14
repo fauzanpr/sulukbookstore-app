@@ -1,4 +1,5 @@
 FROM php:8.1.13-fpm-alpine3.15
+FROM mysql:8.0.31-oracle
 RUN apk add --no-cache nginx wget
 
 RUN mkdir -p /run/nginx
