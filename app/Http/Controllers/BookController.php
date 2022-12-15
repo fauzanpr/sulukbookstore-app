@@ -54,7 +54,7 @@ class BookController extends Controller
     public function store(Request $request)
     {
         if ($request->file('cover_photo')) {
-            $image = $request->file('cover_photo')->store('book_cover', 'public');
+            $image = $request->file('cover_photo')->store('cover');
             $googleConfigFile = file_get_contents(config_path('googlecloud.json'));
             $storage = new StorageClient([
                 'keyFile' => json_decode($googleConfigFile, true)
