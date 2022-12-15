@@ -72,7 +72,7 @@
                                                     <img src="/images/product-01.jpg" class="img-responsive" alt="Foto Buku"
                                                         style="max-width: 150px;">
                                                 @else
-                                                    <img src="{{ asset('storage/' . $book->cover_photo) }}"
+                                                    <img src="{{ asset($book->cover_photo) }}"
                                                         class="img-responsive" alt="Foto Buku" style="max-width: 150px;">
                                                 @endif
                                             </div>
