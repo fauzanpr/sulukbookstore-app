@@ -172,6 +172,8 @@ class BookController extends Controller
     {
         $buku = Book::find($id);
 
+        dd($buku->cover_photo);
+
         if ($buku->cover_photo && file_exists(storage_path('app/public/' . $buku->cover_photo))) {
             Storage::delete('public/' . $buku->cover_photo);
             $image = $buku->cover_photo;
